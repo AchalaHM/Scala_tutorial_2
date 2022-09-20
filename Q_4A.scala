@@ -8,7 +8,7 @@ object O1 extends App{
     }
 
     def income(hour1:Int,hour2:Int):Int={
-        wage(hour1)+otWage(hour2)
+        wage(hour1)+ot(hour2)
     }
 
     def tax(income:Int):Double={
@@ -19,5 +19,5 @@ object O1 extends App{
         income(h1,h2)- tax(income(h1,h2))
     }
 
-    printf("%.2f",takeHomeWage(40,30));
+    printf("%.2f",takeHome(40,30));
 }
